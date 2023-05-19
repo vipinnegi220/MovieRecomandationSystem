@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Movie Form</title>
+        <link rel="stylesheet" href="style.css"  type="text/css">
+        
+    </head>
+    <body>
+        <h1>Select Your Movie Preference:</h1>
+        <div class="main">
+        <div class="movie-form">
+            <form id="register" action="data.php"  method="POST">
+                <label>Age</label>
+                <br>
+                <input type="number" name="Age" id="Age" placeholder="Your age" min="0" max="80" required>
+
+                <br><br>
+                <label for ="Gender">Gender</label>
+                <br>
+                <input type="radio"  name="yesno" value="1"> Male
+                <input type="radio" name="yesno" value="2"> Female
+                <input type="radio" checked name="yesno" value="2"> Other
+                
+                <br><br>
+                <label id="Genre" for ="Genre">Genre</label>
+                <br>
+                <!-- <div class="name" style="width:200px;"> -->
+                <select name="Genre">
+                    <option  value="Drama" >Drama</option>
+                    <option value="Thriller">Thriller</option>
+                    <option value="Horror">Horror</option>
+                    <option value="Action">Action</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Sci-fi">Science</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Crime">Crime</option>
+                    <option value="Animation">Animation</option>
+                    <option value="Documentry">Documentry</option>
+                    <option value="History">History</option>
+                   
+                </select>
+                <label id="Genre2" for ="Genre"></label>
+                
+                <!-- <div class="name" style="width:200px;"> -->
+                
+            <!-- </div> -->
+                <br>
+                <br>
+                <label for ="Pricing">Pricing(In Cr)</label>
+                <br>
+                <input type="number" name="Pricing"  id="Price"  placeholder="Pricing" min="100" required>
+                <br><br>
+               <input id="submit"  type="submit" name="submit" value="Submit" >
+            </form>
+        </div>
+    </div>
+    </body>
+</html>
+
